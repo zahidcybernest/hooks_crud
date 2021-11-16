@@ -42,7 +42,7 @@ useEffect(() => {
 
     return (
         <div>
-            <h2>Crud App</h2>
+            
             <Table singleLine>
                 <Table.Header>
                     <Table.Row>
