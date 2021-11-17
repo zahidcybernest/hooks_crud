@@ -21,7 +21,7 @@ useEffect(() => {
     setFirstName(localStorage.getItem('First Name'));
     setLastName(localStorage.getItem('Last Name'));
     setCheckbox(localStorage.getItem('Checkbox Value'))
-    console.log(localStorage.getItem('First Name'));
+
 },[]);
 
 useEffect(()=>{

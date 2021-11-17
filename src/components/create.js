@@ -13,7 +13,7 @@ export default function Create() {
             checkbox
         })
     }
-    console.log(1212);
+    
     return (
         <div>
             <Form className="create-form">

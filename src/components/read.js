@@ -10,7 +10,7 @@ export default function Read() {
 const [APIData, setAPIData] = useState([]);
 
 const setData = (data) => {
-    console.log(data);
+
     let { id, firstName, lastName, checkbox } = data;
     localStorage.setItem('ID', id);
     localStorage.setItem('First Name', firstName);

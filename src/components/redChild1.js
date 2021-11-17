@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import {  Button, Table } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import React from 'react';
+
 import { connect } from 'react-redux'
 
 import { buyCake } from './redux/index'
+
+import RedChild2 from './redChild2'
 
 
 
@@ -14,8 +14,12 @@ import { buyCake } from './redux/index'
         <div>
 
             <h2>Child1</h2>
-            <h2> No. of Cakes- {props.numOfCakes}</h2>
+            <h2> No. of Cakes- {props.numOfCakes + 5}</h2>
             <button onClick= {props.buyCake}>Buy Cake</button>
+            <hr/>
+
+            <RedChild2/>
+            <hr/>
 
         </div>
         
@@ -26,7 +30,7 @@ import { buyCake } from './redux/index'
 
 const mapStateToProps = state => {
     return{
-        numOfCakes: state.numOfCakes
+        numOfCakes: state.cake.numOfCakes
     }
 }
 
