@@ -11,8 +11,11 @@ function UserContainer({userData, fetchUsers}){
 
     useEffect(() => {
 
+        console.log(userData, '1');
+
         // dispatch(fetchUsers())
         fetchUsers() 
+        console.log(userData, '2');
         
 
     }, [])
@@ -34,8 +37,8 @@ function UserContainer({userData, fetchUsers}){
          <div>
              <h1>success </h1>
             {
-                userData & userData.users && 
-                userData.users.map(user => <p>user.name</p>)}
+                
+                userData.users.map(user => <p>{user.name}</p>)}
         </div>
          </div>
  
@@ -44,7 +47,7 @@ function UserContainer({userData, fetchUsers}){
 }
 
 const mapStateToProps = state => {
-    
+    // console.log(state.user.users)
     return{
         userData: state.user
     }
